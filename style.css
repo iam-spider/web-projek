@@ -1,0 +1,264 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+/* Navbar */
+header {
+    background: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1100px;
+    margin: auto;
+    padding: 10px 20px;
+}
+
+header .firstname {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+header ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    padding: 15px;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #ff6600;
+}
+
+body {
+    padding-top: 60px; /* Menyesuaikan untuk fixed header */
+}
+
+/* Hero Section */
+#home {
+    background: url('stadion.jpg') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 200px 20px;
+}
+
+#home h1 {
+    font-size: 68px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+#home p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* About Section */
+#about {
+    padding: 60px 20px;
+    text-align: center;
+    background: #fff;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#about p {
+    text-indent: 45px;
+    text-align: justify;
+    font-size: 18px;
+    max-width: 800px;
+    margin: auto;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+}
+
+.left-images {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.left-images img,
+.right-image img {
+    width: 150px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.right-image img {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Services Section */
+#services {
+    padding: 60px 20px;
+    text-align: center;
+    background: #f4f4f4;
+}
+
+#services h2 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+  /* News Container */
+  .news-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .news-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    flex: 0 0 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease;
+  }
+  
+  .news-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .news-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+  }
+  
+  .news-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #000000;
+    padding: 10px;
+    margin: 0;
+  }
+  
+  .news-category {
+    font-size: 0.8rem;
+    color: #f39c12;
+    padding: 0 10px 10px 10px;
+    margin: 0;
+  }
+
+/* Contact Section */
+#contact {
+    padding: 60px 20px;
+    text-align: center;
+    background: #333;
+    color: white;
+}
+
+#contact h2 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+#contact .btn {
+    background: #ff6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+#contact .btn:hover {
+    background: #cc5200;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #333;
+    color: white;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .news-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    nav ul li {
+        margin: 0;
+    }
+    
+    main {
+        margin-top: 120px;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    .btn{
+        font-size: 14px;
+    }
+}
